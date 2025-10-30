@@ -128,7 +128,7 @@ As reported in the paper:
 
 Ablation studies confirm that removing any module (GNN, Noise, Classifier) degrades performance across all metrics.
 
----
+
 
 ## 7. FAQ
 - Q1. Can it be applied to MRI or other modalities?
@@ -137,12 +137,13 @@ Yes, as long as the dataset has slice-wise correspondence and semantic masks.
 - Q2. Generated images look blurry.
 
 Check if --use_gnn_fusion is enabled or reduce noise intensity.
+
 Training longer or tuning the learning rate may also help.
-
 - Q3. Small dataset?
+  
 Apply data augmentation (flips, rotations, slice sampling) to improve generalization.
-
 - Q4. Training is slow.
+  
 Try lowering batch_size, reducing GNN depth, or using a GPU with more memory.
 
 ---
