@@ -18,11 +18,11 @@
   - [4.3 Inference (Deployment)](#43-inference-deployment)
 - [5. Model Architecture](#5-model-architecture)
 - [6. Experimental Results & Metrics](#6-experimental-results--metrics)
-- [7. FAQ](#9-faq)
-- [8. Contribution Guide](#10-contribution-guide)
-- [9. Acknowledgments](#11-acknowledgments)
-- [10. License](#12-license)
-- [11. References](#13-references)
+- [7. FAQ](#7-faq)
+- [8. Contribution Guide](#8-contribution-guide)
+- [9. Acknowledgments](#9-acknowledgments)
+- [10. License](#10-license)
+- [11. References](#11-references)
 
 ---
 
@@ -128,7 +128,7 @@ As reported in the paper:
 
 Ablation studies confirm that removing any module (GNN, Noise, Classifier) degrades performance across all metrics.
 
-
+---
 
 ## 7. FAQ
 - Q1. Can it be applied to MRI or other modalities?
@@ -145,5 +145,20 @@ Apply data augmentation (flips, rotations, slice sampling) to improve generaliza
 - Q4. Training is slow.
   
 Try lowering batch_size, reducing GNN depth, or using a GPU with more memory.
+
+---
+
+## 8. Contribution Guide
+We welcome pull requests and issue reports!
+
+1.Fork this repository
+
+2.Create a new branch: feature/your-feature
+
+3.Commit your changes with clear messages
+
+4.Open a Pull Request
+
+Please ensure code clarity and add comments when necessary.
 
 ---
