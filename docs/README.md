@@ -107,16 +107,24 @@ python create.py --opt options/create.yml --input_path my_masks/ --output_path m
 ```
 -Generates new medical images from given semantic masks.
 
-## 5. Model Architecture
-AnatoMaskGAN consists of the following core modules:
-- Generator (G): Takes a mask and neighboring slice features to synthesize the target image.
-- Discriminator (D): Distinguishes real vs. generated images.
-- GNN-Fusion Module: Models inter-slice dependency using a graph convolutional structure.
-- 3D Noise Injection: Adds spatial perturbations to enhance structure variation.
-- Grayscale–Texture Classifier: Improves texture and intensity realism.
+## 5. Model Architecture🧠
+## 5. Model Architecture 🧠
 
-Loss functions include adversarial loss, reconstruction loss (L1/L2), texture loss, and perceptual structure loss (e.g., LPIPS).
-![Model Architecture](../picture1.png)
+The overall architecture of AnatoMaskGAN is presented in **Figure 1** below. The framework is built around an innovative **Generator** (G) and an augmented **Grayscale-Texture Discriminator** (D), working together to ensure high-fidelity image synthesis and inter-slice consistency.
+
+![Overall Architecture of AnatoMaskGAN](../picture1.png)
+
+### Core Modules
+
+* **Generator (G):** The main synthesis network. It takes the semantic mask as input and synthesizes the target medical image by integrating features fused from neighboring slices.
+* **GNN-Fusion Module (GNN-SIF):** The **G**raph **N**eural **N**etwork-driven **S**lice **I**nter-slice **F**usion module. This component models and aggregates the spatial contextual dependencies between adjacent slices, ensuring anatomical structure consistency across the 3D volume.
+* **3D Noise Injection:** An innovative 3D spatial noise injection strategy that introduces spatial perturbations to enhance the structural and textural diversity of the synthesized images.
+* **Discriminator (D):** Responsible for distinguishing between real and generated images.
+* **Grayscale–Texture Classifier:** Embedded within the Discriminator, it specifically optimizes the grayscale distribution and texture details, significantly improving the perceptual realism of the generated images.
+
+### Loss Functions
+
+The model is optimized using a combination of loss functions to ensure synthesis quality and structural fidelity, including: **Adversarial Loss**, **Reconstruction Loss (L1/L2)**, **Texture Loss**, and **Perceptual Structure Loss (e.g., LPIPS)**.
 
 ---
 
