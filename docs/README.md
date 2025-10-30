@@ -166,7 +166,7 @@ Please ensure code clarity and add comments when necessary.
 ## 9. Acknowledgments
 Thanks to Zonglin Wu et al. for proposing
 AnatoMaskGAN: GNN-Driven Slice Feature Fusion and Noise Augmentation for Medical Semantic Image Synthesis
-(arXiv:2508.11375).
+[📄(arXiv:2508.11375)](https://arxiv.org/abs/2508.11375).
 - We also acknowledge the open-source community for contributions in GNN, GAN, and medical image synthesis research.
 
 ---
@@ -183,6 +183,6 @@ See the [`LICENSE`](./LICENSE) file for details.
   
 AnatoMaskGAN: GNN-Driven Slice Feature Fusion and Noise Augmentation for Medical Semantic Image Synthesis.
 
-[📄 Paper (arXiv:2508.11375)](https://arxiv.org/abs/2508.11375)
+[📄(arXiv:2508.11375)](https://arxiv.org/abs/2508.11375)
 
 - Additional related works can be listed here.
