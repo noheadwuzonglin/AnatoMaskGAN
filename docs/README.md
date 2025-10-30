@@ -116,6 +116,7 @@ AnatoMaskGAN consists of the following core modules:
 - Grayscale–Texture Classifier: Improves texture and intensity realism.
 
 Loss functions include adversarial loss, reconstruction loss (L1/L2), texture loss, and perceptual structure loss (e.g., LPIPS).
+![Model Architecture](../picture1.png)
 
 ---
 
