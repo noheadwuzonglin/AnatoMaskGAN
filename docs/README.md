@@ -183,6 +183,6 @@ See the [`LICENSE`](./LICENSE) file for details.
   
 AnatoMaskGAN: GNN-Driven Slice Feature Fusion and Noise Augmentation for Medical Semantic Image Synthesis.
 
-arXiv:2508.11375
+[📄 Paper (arXiv:2508.11375)](https://arxiv.org/abs/2508.11375)
 
 - Additional related works can be listed here.
