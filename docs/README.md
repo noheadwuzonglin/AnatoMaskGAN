@@ -61,3 +61,10 @@ Python >= 3.8
 PyTorch >= 1.12
 CUDA >= 10.2  (recommended)
 
+### 3.2 Install dependencies
+```bash
+pip install -r requirements.txt
+# or manually install
+pip install numpy scipy matplotlib tqdm scikit-image networkx
+
+
