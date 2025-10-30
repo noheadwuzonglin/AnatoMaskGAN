@@ -171,14 +171,14 @@ AnatoMaskGAN: GNN-Driven Slice Feature Fusion and Noise Augmentation for Medical
 
 ---
 
-## 10.License
+## 10. License
 This project is licensed under the MIT License.
-See the [`LICENSE`](LICENSE.md) file for details.
+See the [`LICENSE`](LICENSE) file for details.
 
 
 ---
 
-## 11.References
+## 11. References
 - Wu, Z., Xue, Y., Hu, Q., et al. (2025).
   
 AnatoMaskGAN: GNN-Driven Slice Feature Fusion and Noise Augmentation for Medical Semantic Image Synthesis.
