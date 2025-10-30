@@ -116,6 +116,7 @@ AnatoMaskGAN consists of the following core modules:
 - GNN-Fusion Module: Models inter-slice dependency using a graph convolutional structure.
 - 3D Noise Injection: Adds spatial perturbations to enhance structure variation.
 - Grayscale–Texture Classifier: Improves texture and intensity realism.
+
 Loss functions include adversarial loss, reconstruction loss (L1/L2), texture loss, and perceptual structure loss (e.g., LPIPS).
 
 ---
