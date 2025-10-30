@@ -12,7 +12,6 @@
   - [3.1 Requirements](#31-requirements)
   - [3.2 Clone the Repository](#32-clone-the-repository)
   - [3.3 Install dependencies](#33-Install-dependencies)
-  - [3.3 Dataset Preparation](#33-dataset-preparation)
 - [4. Usage](#4-usage)
   - [4.1 Training](#41-training)
   - [4.2 Testing / Generation](#42-testing--generation)
@@ -77,4 +76,28 @@ pip install -r requirements.txt
 # or manually install
 pip install numpy scipy matplotlib tqdm scikit-image networkx
 
+```
 
+## 4. Usage
+
+### 4.1 Training
+```bash
+python train.py --opt options/train.yml
+Common arguments:
+| Argument               | Description                        |
+| ---------------------- | ---------------------------------- |
+| `--dataset`            | Dataset name (e.g., L2R-OASIS)     |
+| `--use_noise3d`        | Enable 3D noise injection          |
+| `--use_gnn_fusion`     | Enable slice fusion via GNN        |
+| `--texture_classifier` | Enable texture classifier          |
+| `--save_dir`           | Directory for checkpoints and logs |
+
+
+```
+
+### 4.2 Testing / Generation
+```bash
+python test.py --opt options/test.yml --model_path checkpoints/latest_net_G.pth
+Results (images, masks, metrics) will be saved under the results/ directory.
+
+```
