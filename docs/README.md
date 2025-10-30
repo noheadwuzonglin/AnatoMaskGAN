@@ -28,7 +28,7 @@
 
 ## 1. Introduction
 **AnatoMaskGAN** implements the ideas presented in the paper  
-*“AnatoMaskGAN: GNN-Driven Slice Feature Fusion and Noise Augmentation for Medical Semantic Image Synthesis”* (arXiv:2508.11375).
+*“AnatoMaskGAN: GNN-Driven Slice Feature Fusion and Noise Augmentation for Medical Semantic Image Synthesis”* [(arXiv:2508.11375)](https://arxiv.org/abs/2508.11375).
 
 This project focuses on medical semantic image synthesis using Generative Adversarial Networks (GANs).  
 It introduces novel strategies to improve anatomical realism and inter-slice consistency.
@@ -173,7 +173,7 @@ AnatoMaskGAN: GNN-Driven Slice Feature Fusion and Noise Augmentation for Medical
 
 ## 10.License
 This project is licensed under the MIT License.
-See the [`LICENSE`](./LICENSE) file for details.
+See the [`LICENSE`](./LICENSE.md) file for details.
 
 
 ---
