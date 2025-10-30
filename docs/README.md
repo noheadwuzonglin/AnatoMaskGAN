@@ -18,13 +18,11 @@
   - [4.3 Inference (Deployment)](#43-inference-deployment)
 - [5. Model Architecture](#5-model-architecture)
 - [6. Experimental Results & Metrics](#6-experimental-results--metrics)
-- [7. Quick Start Demo](#7-quick-start-demo)
-- [8. Project Structure](#8-project-structure)
-- [9. FAQ](#9-faq)
-- [10. Contribution Guide](#10-contribution-guide)
-- [11. Acknowledgments](#11-acknowledgments)
-- [12. License](#12-license)
-- [13. References](#13-references)
+- [7. FAQ](#9-faq)
+- [8. Contribution Guide](#10-contribution-guide)
+- [9. Acknowledgments](#11-acknowledgments)
+- [10. License](#12-license)
+- [11. References](#13-references)
 
 ---
 
@@ -129,5 +127,22 @@ As reported in the paper:
 | L2R-AbdomenCT | 25.47 dB     | **0.8602** | +0.48 %     |
 
 Ablation studies confirm that removing any module (GNN, Noise, Classifier) degrades performance across all metrics.
+
+---
+
+## 7. FAQ
+- Q1. Can it be applied to MRI or other modalities?
+  
+Yes, as long as the dataset has slice-wise correspondence and semantic masks.
+- Q2. Generated images look blurry.
+
+Check if --use_gnn_fusion is enabled or reduce noise intensity.
+Training longer or tuning the learning rate may also help.
+
+- Q3. Small dataset?
+Apply data augmentation (flips, rotations, slice sampling) to improve generalization.
+
+- Q4. Training is slow.
+Try lowering batch_size, reducing GNN depth, or using a GPU with more memory.
 
 ---
