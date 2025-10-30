@@ -127,6 +127,7 @@ As reported in the paper:
 | ------------- | ------------ | ---------- | ----------- |
 | L2R-OASIS     | **26.50 dB** | 0.857      | +0.43 dB    |
 | L2R-AbdomenCT | 25.47 dB     | **0.8602** | +0.48 %     |
+
 Ablation studies confirm that removing any module (GNN, Noise, Classifier) degrades performance across all metrics.
 
 ---
