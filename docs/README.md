@@ -111,11 +111,11 @@ python create.py --opt options/create.yml --input_path my_masks/ --output_path m
 
 ## 5. Model Architecture
 AnatoMaskGAN consists of the following core modules:
--Generator (G): Takes a mask and neighboring slice features to synthesize the target image.
--Discriminator (D): Distinguishes real vs. generated images.
--GNN-Fusion Module: Models inter-slice dependency using a graph convolutional structure.
--3D Noise Injection: Adds spatial perturbations to enhance structure variation.
--Grayscale–Texture Classifier: Improves texture and intensity realism.
+- Generator (G): Takes a mask and neighboring slice features to synthesize the target image.
+- Discriminator (D): Distinguishes real vs. generated images.
+- GNN-Fusion Module: Models inter-slice dependency using a graph convolutional structure.
+- 3D Noise Injection: Adds spatial perturbations to enhance structure variation.
+- Grayscale–Texture Classifier: Improves texture and intensity realism.
 Loss functions include adversarial loss, reconstruction loss (L1/L2), texture loss, and perceptual structure loss (e.g., LPIPS).
 
 ---
