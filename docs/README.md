@@ -61,7 +61,16 @@ Python >= 3.8
 PyTorch >= 1.12
 CUDA >= 10.2  (recommended)
 
-### 3.2 Install dependencies
+```
+
+### 3.2 Clone the Repository
+```bash
+git clone https://github.com/noheadwuzonglin/AnatoMaskGAN.git
+cd AnatoMaskGAN
+
+```
+
+### 3.3 Install dependencies
 ```bash
 pip install -r requirements.txt
 # or manually install
