@@ -83,6 +83,7 @@ pip install numpy scipy matplotlib tqdm scikit-image networkx
 ### 4.1 Training
 ```bash
 python train.py --opt options/train.yml
+```
 Common arguments:
 | Argument               | Description                        |
 | ---------------------- | ---------------------------------- |
@@ -98,6 +99,7 @@ Common arguments:
 ### 4.2 Testing / Generation
 ```bash
 python test.py --opt options/test.yml --model_path checkpoints/latest_net_G.pth
-Results (images, masks, metrics) will be saved under the results/ directory.
-
 ```
+-Results (images, masks, metrics) will be saved under the results/ directory.
+
+
