@@ -107,9 +107,9 @@ python create.py --opt options/create.yml --input_path my_masks/ --output_path m
 ```
 -Generates new medical images from given semantic masks.
 
-## 5. Model Architecture 🧠
+## 5. Model Architecture🧠
 
-The overall architecture of AnatoMaskGAN is presented in **Figure 1** below. The framework is built around an innovative **Generator** (G) and an augmented **Grayscale-Texture Discriminator** (D), working together to ensure high-fidelity image synthesis and inter-slice consistency.
+The overall architecture of AnatoMaskGAN is presented in the figure below. The framework is built around an innovative **Generator** (G) and an augmented **Grayscale-Texture Discriminator** (D), working together to ensure high-fidelity image synthesis and inter-slice consistency.
 
 ![Overall Architecture of AnatoMaskGAN](../picture1.png)
 
