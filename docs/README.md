@@ -11,6 +11,7 @@
 - [3. Installation & Environment](#3-installation--environment)
   - [3.1 Requirements](#31-requirements)
   - [3.2 Clone the Repository](#32-clone-the-repository)
+  - [3.3 Install dependencies](#33-Install-dependencies)
   - [3.3 Dataset Preparation](#33-dataset-preparation)
 - [4. Usage](#4-usage)
   - [4.1 Training](#41-training)
